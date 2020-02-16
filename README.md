@@ -15,5 +15,5 @@ An A-Z compilation of every player to appear on the match sheet for Oud-Heverlee
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](https://en.wikipedia.org/wiki/Jordan_Remacle) and ![Image](https://en.wikipedia.org/wiki/Jordan_Remacle#/media/File:Metall-Lokeren_(3).jpg)
 ```
