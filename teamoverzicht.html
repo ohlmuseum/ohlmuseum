@@ -3,15 +3,25 @@
 <style>
   table {
     border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
   }
 
-  th {
+  th, td {
     border: 1px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 4px;
   }
 
-  td {
-    border: 1px solid black;
-  }
+  /* Column widths — applies to every table using nth-child position */
+  tr th:nth-child(1), tr td:nth-child(1) { width: 22%; }  /* Club */
+  tr th:nth-child(2), tr td:nth-child(2) { width: 22%; }  /* Speler */
+  tr th:nth-child(3), tr td:nth-child(3) { width: 14%; }  /* Periode */
+  tr th:nth-child(4), tr td:nth-child(4) { width: 18%; }  /* Niveau */
+  tr th:nth-child(5), tr td:nth-child(5) { width: 12%; }  /* Periode OHL */
+  tr th:nth-child(6), tr td:nth-child(6) { width: 12%; }  /* Niveau OHL */
 
   .flag {
     width: 20px;
@@ -3340,7 +3350,6 @@
     <tr>
       <td rowspan=1 align="left"><img class="flagsmall" src="be.png" /> <b>H</b>eusden-Zolder (2006– )<br><img
           class="flagsmall" src="be.png" /> Berkenbos (1990–2006)</td>
-      </td>
       <td><img class="flagsmall" src="be.png" /> <a href="ruttensjonathan.html" title="Ruttens, Jonathan">RUTTENS,
           Jonathan</a></td>
       <td>2010–2011</td>
